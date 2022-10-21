@@ -1,6 +1,7 @@
 #include "play_game.h"
 #include "read_write_to_file.h"
 
+
 void play_the_game(const int max) {
     std::srand(std::time(nullptr));
     const int target_value = std::rand() % max;

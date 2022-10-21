@@ -34,8 +34,7 @@ bool read_from_file() {
         in_file.ignore();
         if (in_file.fail()) break;
         std::cout << username << '\t' << high_score << std::endl;
-    }
- 
+    } 
     in_file.close();
     return true;
 }

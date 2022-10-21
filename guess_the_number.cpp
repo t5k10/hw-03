@@ -20,6 +20,5 @@ int main(int argc, char** argv) {
     } 
     else { 
         play_the_game(); 
-    }
-        
+    }        
 }
