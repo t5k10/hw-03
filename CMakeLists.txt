@@ -17,7 +17,12 @@ add_executable(guess_the_number ${SOURCES} ${HEADERS})
 
 set_target_properties(
     guess_the_number PROPERTIES
-    CXX_STANDARD 17
-    LINKER_LANGUAGE CXX 
+    CXX_STANDARD 17 
     CXX_STANDARD_REQUIRED ON
 )
+
+target_include_directories(
+   guess_the_number
+   PRIVATE
+   ${CMAKE_CURRENT_BINARY_DIR}
+   )
